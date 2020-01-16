@@ -19,13 +19,14 @@ Array.prototype.last = function() {
 function Phrase(content) {
   this.content = content;
 
-  this.processor = function(string) {
-    return string.toLowerCase();
-  };
-
   //Returns content processed for palindrome testing
   this.processedContent = function processedContent() {
-    return this.processor(this.content);
+    return this.letters().toLowerCase();
+  };
+
+  //Returns the letters in the content.
+  this.letters = function letters() {
+    return (this.content.match(/[a-z]/gi) || []).join("");
   };
 
   //Returns true for a palindrom, false otherwise.
