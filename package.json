@@ -1,6 +1,6 @@
 {
   "name": "bdvloped-palindrome",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "description": "Palindrome detector",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/DJH-dev/bdvloped-palindrome/issues"
   },
-  "homepage": "https://github.com/DJH-dev/bdvloped-palindrome#readme"
+  "homepage": "https://github.com/DJH-dev/bdvloped-palindrome#readme",
+  "dependencies": {}
 }
