@@ -18,6 +18,11 @@ describe("Phrase", function() {
       assert(mixedCase.palindrome());
     });
 
+    it("should return false for an empty string", function() {
+      let emptyPhrase = new Phrase ("");
+      assert(!emptyPhrase.palindrome());
+    });
+
     it("should return true for a palindrome with punctuation", function() {
       let punctuatedPalindrome = new Phrase("Madam, I'm Adam.");
       assert(punctuatedPalindrome.palindrome());

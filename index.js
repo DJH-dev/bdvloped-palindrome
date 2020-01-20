@@ -32,11 +32,10 @@ function Phrase(content) {
 
   //Returns true for a palindrom, false otherwise.
   this.palindrome = function palindrome() {
-    return this.processedContent() === this.processedContent().reverse();
-  };
-
-  //Returns the content in uppercase form.
-  this.louder = function louder() {
-    return this.content.toUpperCase();
-  };
+    if (this.letters()) {
+      return this.processedContent() === this.processedContent().reverse();
+    } else {
+      return false;
+    }
+  }
 }
